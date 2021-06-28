@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import "./content.css";
 
 import {
     Carousel,
@@ -7,13 +8,6 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-
-
-const CarouselStyle = {
-    backgroundColor:"transparent",
-    backgroundImage:"none",
-    color:"black"
-}
 
 
 const carouselItems=[
@@ -74,7 +68,7 @@ const Content = (props)=>{
                 key={item.src} 
             >
                 <img src={item.src} alt={item.altText} />
-                 <CarouselCaption className="fs-3 text-secondary "captionText={item.caption} captionHeader={item.caption} />
+                 <CarouselCaption className="custom-tag fs-3 text-secondary "captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );
     });
