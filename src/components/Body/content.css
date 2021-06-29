@@ -1,3 +1,16 @@
-.custom-tag{
-    background-color: transparent!;
+.home-container{
+    background-color: transparent !important;
+    color: white;
+}
+#circle-img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50% !important;
+    border: 7px solid whitesmoke;
+}
+#circle-img img{
+    width: 100%;
+    height: auto;
 }
