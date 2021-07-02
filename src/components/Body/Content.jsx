@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import './content.css';
+import './content.scss';
 
 function Home(){
     return(

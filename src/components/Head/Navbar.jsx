@@ -7,7 +7,8 @@ import {  Collapse,
     Nav,
     NavItem,
     NavLink,
-    NavbarText} from 'reactstrap';
+    NavbarText,
+    Button} from 'reactstrap';
 
 const Navi = (props)=>{
     const [isOpen, setIsOpen] = useState(false);
@@ -25,19 +26,23 @@ const Navi = (props)=>{
                                 <NavLink>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>About Me</NavLink>
+                                <NavLink>About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Experience</NavLink>
+                                <NavLink>Services</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Socials</NavLink>
+                                <NavLink>Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink>Contact Me</NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink>
+                                    <Button>Get a quote!</Button>
+                                </NavLink>
+                            </NavItem>
                         </Nav>
-                        <NavbarText>Andre Vaquez</NavbarText>
                     </Collapse>
                 </div>
             </Navbar>
