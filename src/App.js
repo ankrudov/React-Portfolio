@@ -10,8 +10,6 @@ function App() {
     <div className="App">
       <Navi/>
       <MainHome/>
-      <Home/>
-      <AboutMe description={description.text}/>
     </div>
   );
 }
