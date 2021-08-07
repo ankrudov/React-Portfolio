@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './Navbar.scss';
 import {  Collapse,
     Navbar,
     NavbarToggler,
@@ -15,34 +15,24 @@ const Navi = (props)=>{
     const toggle = () => setIsOpen(!isOpen);
 
     return(
-        <section className="mt-5 mb-5 pb-5">
-            <Navbar fixed="top" light expand="md">
+        <section className="mt-5 mb-0 pb-5">
+            <Navbar fixed="top" expand="md" className="navba">
                 <div className="container-fluid">
                     <NavbarBrand><img src="./assets/icon.png" width="30" height="30" alt="Lpaka Logo"></img></NavbarBrand>
                     <NavbarToggler onClick={toggle} className="mr-2" />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto mr-auto">
                             <NavItem>
-                                <NavLink>Home</NavLink>
+                                <NavLink>About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>About</NavLink>
+                                <NavLink>Skills</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Services</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink>Portfolio</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink>Contact Me</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink>
-                                    <Button>Get a quote!</Button>
-                                </NavLink>
+                                <NavLink>Projects</NavLink>
                             </NavItem>
                         </Nav>
+                        <NavbarText>Andre Vasquez</NavbarText>
                     </Collapse>
                 </div>
             </Navbar>
