@@ -1,33 +1,39 @@
 const IMAGES = [
     {
         id: 0,
-        name: "Hey its me!",
-        image: "./assets/me.jpg",
-        descriptions:"Just me in front of some woods"
+        name: "Css",
+        image: "./assets/CSS.png",
+        descriptions:"Styling the Web"
     },
     {
         id: 1,
-        name: "My girlfriend and i",
-        image: "./assets/GRRX0068.JPG",
-        descriptions:"Enjoying the waterfalls at Minas Viejas,Mexico"
+        name: "HTML",
+        image: "./assets/HTML.png",
+        descriptions:"The backbone of the web"
     },
     {
         id: 3,
-        name: "Big Bend National Park",
-        image: "./assets/back_2.JPG",
-        descriptions:"Road Trip to west texas"
+        name: "Javascript",
+        image: "./assets/javascript.png",
+        descriptions:"Makes the web go"
     },
     {
         id: 4,
-        name: "My beautiful girl and i again!",
-        image: "./assets/me.PNG",
-        descriptions:"Wonder of the world, Machu picchu"
+        name: "Python",
+        image: "./assets/python_logo.png",
+        descriptions:"Simple Yet,Powerful"
     },
     {
         id: 5,
-        name: "Mishka the Alaskan Klee Kai",
-        image: "./assets/mishka.jpg",
-        descriptions:"Doggo"
+        name: "React",
+        image: "./assets/react.png",
+        descriptions:"A powerful Frontend framework"
+    },
+    {
+        id: 6,
+        name: "Django",
+        image: "./assets/Djnago.png",
+        descriptions:"A powerful Backend framework"
     }
 ];
 

@@ -1,5 +1,9 @@
+.whole-card{
+    color: black !important;
+}
+
 .card-image{
     width: 100% !important;
     height: 15vw !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
 }

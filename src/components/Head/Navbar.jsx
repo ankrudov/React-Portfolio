@@ -23,7 +23,7 @@ const Navi = (props)=>{
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto mr-auto">
                             <NavItem>
-                                <NavLink>About Me</NavLink>
+                                <NavLink href='#about-container'>About Me</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink>Skills</NavLink>
