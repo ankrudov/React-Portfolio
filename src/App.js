@@ -15,6 +15,7 @@ function App() {
       <MainHome/>
       <AboutMe/>
       <SkillsSection/>
+      <Projects/>
       <FooterSection/>
     </div>
   );
