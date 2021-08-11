@@ -1,51 +1,63 @@
-import React from 'react';
-import { Container, Row, CardColumns, Card, CardTitle,CardBody, CardText, CardImg, CardImgOverlay,Button, CardFooter } from 'reactstrap';
+import React, {Component} from 'react';
+import { Container, Row, Col} from 'reactstrap';
+import Carousel from 'react-elastic-carousel';
 import './content.scss';
+import CONTENTDATA from './ContentData';
 
+const contentData = CONTENTDATA;
+const breakPoints=[
+    {width:1,itemsToShow:1},
+    {width:500,itemsToShow:2},
+    {width:768,itemsToShow:3},
+    {width:1200,itemsToShow:4}
+]
 function Projects(){
     return(
         <Container fluid className='mt-5 projects-container'>
-            <Container>
-                <h2>My Projects</h2>
+            <Container className='pb-5'>
                 <Row>
-                    <CardColumns>
-                    </CardColumns>
+                    <h2 className='mt-5 mb-5'>My Projects</h2>
+                    <Carousel breakPoints={breakPoints}>
+                        {contentData.map(content=>{
+                            return(
+                                <FrontBackCard
+                                    key={content.key}
+                                    title={content.title}
+                                    description={content.description}
+                                    image={content.image}
+                                    linkOne={content.linkOne}
+                                    linkTwo={content.linkTwo}
+                            />);
+                        })}
+                    </Carousel>
                 </Row>
             </Container>
         </Container>
     );
 }
 
-function projectCards(props){
+function FrontBackCard(props){
     return(
-        // front side
-        <div className='card-wrapper'>
-            <div id={props.key} className='card card-rotating text-center'>
-                <div className='face front'>
-                    <Card inverse>
-                        <CardImg width='100%' src={props.image} alt={props.description}/>
-                        <CardImgOverlay>
-                            <CardTitle tag='h5'>{props.title}</CardTitle>
-                        </CardImgOverlay>
-                        <a className="rotate-btn" data-card={props.key}><i class="fas fa-redo-alt"></i> Click here to rotate</a>
-                    </Card>
-                    <div className='face back'>
-                        <Card>
-                            <CardBody>
-                                <CardTitle>{props.title}</CardTitle>
-                                <CardText>{props.description}</CardText>
-                                <ul className='link-list'>
-                                    <li><a href={props.linkOne} className="list-link-item"><i class="fas fa-laptop"></i></a></li>
-                                    <li><a href={props.linkTwo} className="list-link-item"><i class="fab fa-github"></i></a></li>
-                                </ul>
-                                <CardFooter><a className="rotate-btn" data-card={props.key}><i class="fas fa-undo"></i> Click here to rotate back</a></CardFooter>
-                            </CardBody>
-                        </Card>
-                    </div>
+        <div key={props.key} className='flip-card'>
+            <div className='flip-card-inner'>
+                <div className='flip-card-front'>
+                    <img className='image-flip-card' src={props.image} alt={props.description} />
+                </div>
+                <div className='flip-card-back'>
+                    <h5 className='mt-3'>{props.title}</h5>
+                    <p>{props.description}</p>
+                    <hr/>
+                    <ul className='list-inline py-2'>
+                        <li className='list-inline-item'><a href={props.linkOne} target="_blank"><i className='fas fa-laptop'></i></a></li>
+                        <li className='list-inline-item'><a href={props.linkTwo} target="_blank"><i className='fab fa-github'></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     );
 }
+   
+
+
 
 export default Projects;

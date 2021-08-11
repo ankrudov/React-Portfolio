@@ -35,8 +35,7 @@ function CardCarousel(props){
                     image={image.image}
                     description={image.descriptions}
                     name={image.name}
-
-                />
+                />;
             })}
         </Carousel>
     );

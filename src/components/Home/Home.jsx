@@ -15,7 +15,7 @@ function MainHome(props){
 
     return(
         <div>
-            <Jumbotron fluid className="mx-auto mt-0">
+            <Jumbotron fluid className="mx-auto pt-5 pb-5">
                 <Container className="ml-auto mr-auto">
                     <Row xs='2' className='mt-5 mb-5'>
                         <Col xs='12'md='6' className='mx-auto'>

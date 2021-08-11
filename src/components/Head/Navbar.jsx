@@ -15,7 +15,7 @@ const Navi = (props)=>{
     const toggle = () => setIsOpen(!isOpen);
 
     return(
-        <section className="mt-5 mb-0 pb-5">
+        <section className="mt-5">
             <Navbar fixed="top" expand="md" className="navba">
                 <div className="container-fluid">
                     <NavbarBrand><img src="./assets/icon.png" width="30" height="30" alt="Lpaka Logo"></img></NavbarBrand>

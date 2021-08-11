@@ -7,7 +7,7 @@ function AboutMe(){
     return(
         <Container fluid className='about-container'>
             <Container>
-                <Row>
+                <Row className='pb-5'>
                     <Col>
                         <h2 className='mt-5 about-title'>My story</h2>
                         <p>My name is andre vasquez, I found my passion for programming when i wrote my first macro in excel VBA.
@@ -20,7 +20,7 @@ function AboutMe(){
                         <p>
                             In a personal persepective, im an avid traveler and food lover. I've been fortunate enough to visit over 20+ states and 3 countries!
                             Tasting delicious native plates along the way. My ultimate goal in life is to visit at least 15 countries and every world wonder, 1/8 to go.
-                            When im not nose deep in books and coding, i like to play,watch and talk basketball🏀 and play online games with my favorite being Battlefield 5. 
+                            When im not nose deep in books and coding, i like to play, watch, and talk basketball🏀 and play online games with my favorite being Battlefield 5. 
                             </p>
                         <p>
                             I.m also a dog person, I care for 2 puppies right a 6 month old bratty alakan klee kai named Mishka 🐺, and a cuddly 3 month old Miniature australian shepherd named Potato 🥔.

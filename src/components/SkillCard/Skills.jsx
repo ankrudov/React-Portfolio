@@ -5,9 +5,11 @@ import './skills.scss';
 
 function SkillsSection(){
     return(
-        <Container className='mt-5'>
-            <h2 className='mt-5 mb-5'>What tech do i use?</h2>
-            <CardCarousel/>
+        <Container fluid className='skillContainer'>
+            <Container className='mb-5 skillContainer'>
+                <h2 className='pt-5 pb-5'>What tech do i use?</h2>
+                <CardCarousel/>
+            </Container>
         </Container>
     );
 }
