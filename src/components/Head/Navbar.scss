@@ -1,15 +1,16 @@
+.nav-toggler{
+    border: 1px solid white !important;
+}
+
 .navba{
     background-color: #dda38b;
-    color: white !important;
+    color: white ;
 }
 .inactive{
-    color: whitesmoke !important;
+    color: whitesmoke;
 }
-.toggler{
-    color: whitesmoke !important;
-}
-.active{
-    color: orange !important;
+.inactive:hover{
+    color: orange;
 }
 
 .mr-2{

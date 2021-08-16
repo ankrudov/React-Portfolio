@@ -17,6 +17,7 @@ function Projects(){
             <Container className='pb-5'>
                 <Row>
                     <h2 className='mt-5 mb-5'>My Projects</h2>
+                    <h4 className='mb-4'>Some things that i have built. Im building more and more everyday so this list will update as i complete more. To see some of my practice projects click here: <a  target="_blank" href="https://github.com/ankrudov"><i class="fab fa-github"></i></a></h4>
                     <Carousel breakPoints={breakPoints}>
                         {contentData.map(content=>{
                             return(

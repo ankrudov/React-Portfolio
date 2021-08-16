@@ -1,6 +1,12 @@
 li{
     list-style-type: none;
 }
+.fa-laptop{
+    color: black;
+}
+.fa-github{
+    color: black ;
+}
 
 .projects-container{
     height: 70vh;
@@ -18,8 +24,7 @@ li{
     }
 }
 
-
-.projects-container h2{
+.projects-container h2, h4{
     color: black;
 }
 .project-title{

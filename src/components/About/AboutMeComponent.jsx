@@ -8,7 +8,7 @@ function AboutMe(){
         <Container fluid className='about-container'>
             <Container>
                 <Row className='pb-5'>
-                    <Col>
+                    <Col xs='12' md='6'>
                         <h2 className='mt-5 about-title'>My story</h2>
                         <p>My name is andre vasquez, I found my passion for programming when i wrote my first macro in excel VBA.
                             the realization that i could create anything i set my mind to really drove it home for me. 
@@ -18,12 +18,12 @@ function AboutMe(){
                             front end development using HTML,CSS,Javascript and finally React.<br/>
                         </p>
                         <p>
-                            In a personal persepective, im an avid traveler and food lover. I've been fortunate enough to visit over 20+ states and 3 countries!
+                            On a personal persepective, im an avid traveler and food lover. I've been fortunate enough to visit over 20+ states and 3 countries!
                             Tasting delicious native plates along the way. My ultimate goal in life is to visit at least 15 countries and every world wonder, 1/8 to go.
-                            When im not nose deep in books and coding, i like to play, watch, and talk basketball🏀 and play online games with my favorite being Battlefield 5. 
+                            When im not coding, i like to play/watch basketball🏀 and play online games with my favorite being Civilization 6. 
                             </p>
                         <p>
-                            I.m also a dog person, I care for 2 puppies right a 6 month old bratty alakan klee kai named Mishka 🐺, and a cuddly 3 month old Miniature australian shepherd named Potato 🥔.
+                            I'm also a dog person! I care for 2 puppies; a 6 month old bratty alakan klee kai named Mishka 🐺, and a cuddly 3 month old Miniature australian shepherd named Potato 🥔.
                         </p>   
                     </Col>
                     <ProfileCard/>

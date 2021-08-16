@@ -1,11 +1,21 @@
 .fab{
-  color: white !important;
+  color: #009DBD!important;
 }
 .fas{
-  color: white !important;
+  color: #009DBD ;
+}
+.fab:hover{
+  color: orange !important;
+}
+.fas:hover{
+  color: orange !important;
 }
 .footLink{
-  color: white !important;
+  color: white;
+  text-decoration: none !important;
+}
+.footLink:hover{
+  color: orange !important;
   text-decoration: none !important;
 }
 .site-footer{

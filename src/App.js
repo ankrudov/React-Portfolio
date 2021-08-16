@@ -17,7 +17,7 @@ class App extends Component{
           <SocialBar/>
           <Navi/>
           <Switch>
-            <Route path='/home' component={MainHome}/>
+            <Route exact path='/' component={MainHome}/>
             <Route path='/about' component={AboutMe}/>
             <Route path='/skills' component={SkillsSection}/>
             <Route path='/projects' component={Projects}/>

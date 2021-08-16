@@ -19,11 +19,11 @@ const Navi = (props)=>{
             <Navbar fixed="top" expand="md" className="navba">
                 <div className="container-fluid">
                     <NavbarBrand><img src="./assets/icon.png" width="30" height="30" alt="Lpaka Logo"></img></NavbarBrand>
-                    <NavbarToggler onClick={toggle} className="mr-2 toggler" />
+                    <NavbarToggler onClick={toggle} className="mr-2 nav-toggler" />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto mr-auto">
                             <NavItem>
-                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/home'><i class="fas fa-home"></i> Home</NavLink>
+                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/'><i class="fas fa-home"></i> Home</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="inactive" activeClassName="active" tag={Link} to='/about'><i class="fas fa-user"></i> About Me</NavLink>
