@@ -7,8 +7,8 @@ import {  Collapse,
     Nav,
     NavItem,
     NavLink,
-    NavbarText,
-    Button} from 'reactstrap';
+    NavbarText,} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Navi = (props)=>{
     const [isOpen, setIsOpen] = useState(false);
@@ -19,17 +19,20 @@ const Navi = (props)=>{
             <Navbar fixed="top" expand="md" className="navba">
                 <div className="container-fluid">
                     <NavbarBrand><img src="./assets/icon.png" width="30" height="30" alt="Lpaka Logo"></img></NavbarBrand>
-                    <NavbarToggler onClick={toggle} className="mr-2" />
+                    <NavbarToggler onClick={toggle} className="mr-2 toggler" />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto mr-auto">
                             <NavItem>
-                                <NavLink href='#about-container'>About Me</NavLink>
+                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/home'><i class="fas fa-home"></i> Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Skills</NavLink>
+                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/about'><i class="fas fa-user"></i> About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Projects</NavLink>
+                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/skills'><i class="fas fa-tools"></i> Skills</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="inactive" activeClassName="active" tag={Link} to='/projects'><i class="fas fa-tasks"></i> Projects</NavLink>
                             </NavItem>
                         </Nav>
                         <NavbarText>Andre Vasquez</NavbarText>

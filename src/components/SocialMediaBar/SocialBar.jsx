@@ -5,8 +5,8 @@ function SocialBar(){
     return(
         <div className="float-sm">
             <div className="fl-fl float-fb">
-                <i className="fab fa-facebook"></i>
-                <a href="https://www.facebook.com/andre.vasquez.39948856" target="_blank"> Facebook</a>
+                <i className="fas fa-file-word"></i>
+                <a href="https://docs.google.com/document/d/1D46Xk_zPvFCfbSo9g7yao6-aM4JNgLVd/edit" target="_blank"> Resume</a>
             </div>
             <div className="fl-fl float-tw">
                 <i className="fab fa-twitter"></i>
