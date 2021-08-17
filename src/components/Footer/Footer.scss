@@ -18,28 +18,26 @@
   color: orange !important;
   text-decoration: none !important;
 }
+
 .site-footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
   background: #dda38b;
   padding: 20px 0;
   height: auto;
+  width: 100%;
 }
 
-.page-enter{
-  opacity: 0;
-  transform: translateX(-100%);
+@media only screen and (min-width:768px){
+  .site-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #dda38b;
+    padding: 20px 0;
+    height: auto;
+    width: 100%;
+  }
 }
 
-.page-enter-active{
-  opacity: 1;
-  transform: translateX(0%);
-  transition: 300ms ease-out;
-}
-
-.page-exit{
-  opacity: 1;
-}
-
-.page-exit-active{
-  opacity: 0;
-  transition: 300ms ease-in;
-}

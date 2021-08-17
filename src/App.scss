@@ -2,3 +2,15 @@ body{
     background-color: #BFDFEC !important;
     color: whitesmoke !important;
 }
+
+@media only screen and (max-width:770px){
+    @media only screen and (orientation:landscape){
+        #turn{display: block;}
+        #root{display: none;}
+    }
+
+    @media only screen and (orientation:portrait){
+        #turn{display: none;}
+        #container{display: block;}
+    }
+}

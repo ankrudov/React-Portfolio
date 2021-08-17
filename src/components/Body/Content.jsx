@@ -13,11 +13,15 @@ const breakPoints=[
 ]
 function Projects(){
     return(
-        <Container fluid className='mt-5 projects-container'>
-            <Container className='pb-5'>
+        <Container fluid className='projects-container'>
+            <Container>
+                <Row className='pt-5'>
+                    <h2>My Projects</h2>
+                </Row>
                 <Row>
-                    <h2 className='mt-5 mb-5'>My Projects</h2>
-                    <h4 className='mb-4'>Some things that i have built. Im building more and more everyday so this list will update as i complete more. To see some of my practice projects click here: <a  target="_blank" href="https://github.com/ankrudov"><i class="fab fa-github"></i></a></h4>
+                    <h4 className=''>Some things that i have built. Im building more and more everyday so this list will update as i complete more. To see some of my practice projects click here: <a  target="_blank" href="https://github.com/ankrudov"><i class="fab fa-github"></i></a></h4>
+                </Row>
+                <Row className='pt-3'>
                     <Carousel breakPoints={breakPoints}>
                         {contentData.map(content=>{
                             return(

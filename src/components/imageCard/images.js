@@ -27,13 +27,13 @@ const IMAGES = [
         id: 5,
         name: "React",
         image: "./assets/react.png",
-        descriptions:"A powerful Frontend framework"
+        descriptions:"Powerful Front framework"
     },
     {
         id: 6,
         name: "Django",
         image: "./assets/Djnago.png",
-        descriptions:"A powerful Backend framework"
+        descriptions:"Powerful Backend framework"
     }
 ];
 

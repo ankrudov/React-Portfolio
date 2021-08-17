@@ -9,7 +9,7 @@ li{
 }
 
 .projects-container{
-    height: 70vh;
+    height: fit-content;
     background-color:#BFDFEC !important;
     background-repeat:repeat-x;
     background-image:url("https://i.stack.imgur.com/b7z29.png");
@@ -27,9 +27,7 @@ li{
 .projects-container h2, h4{
     color: black;
 }
-.project-title{
-    margin-top: 3rem;
-}
+
 .flip-card {
     border-radius: 35px;
     background-color: transparent;
@@ -75,4 +73,8 @@ li{
     width: 300px !important;
     height: auto !important;
     object-fit: cover !important;
+}
+
+h4{
+    font-size: small;
 }
